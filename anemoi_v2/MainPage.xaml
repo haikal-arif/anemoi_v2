@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="anemoi_v2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:anemoi_v2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="775" Height="390">
+
+    <StackPanel x:Name="contentPanel" Margin="61,30,86,10">
+        <TextBlock HorizontalAlignment="Left" Text="Ideal Air Properties Calculator" FontSize="36"/>
+        <StackPanel x:Name="inputPanel" Orientation="Horizontal" Margin="0,20,0,20">
+            <ComboBox x:Name="propertiesType" Width="150" Height="34" VerticalAlignment="Bottom" >
+                <ComboBoxItem Content="Temperature" IsSelected="True"/>
+                <ComboBoxItem Content="Enthalpy"/>
+                <ComboBoxItem Content="Relative Pressure"/>
+                <ComboBoxItem Content="Internal Energy"/>
+                <ComboBoxItem Content="Relative Volume"/>
+                <ComboBoxItem Content="Entropy"/>
+            </ComboBox>
+            <TextBox x:Name="inputValue" Width="300" Height="34" VerticalAlignment="Center" />
+            <Button x:Name="inputButton" Content="Calculate" VerticalAlignment="Center" Click="inputButton_Click"  />
+        </StackPanel>
+        <TextBlock x:Name="validationMessage"/>
+        <StackPanel x:Name="TemperatureOutput" Orientation="Horizontal" Margin="0,0,0,0">
+            <TextBlock Text="Temperature" Width="150"/>
+            <TextBlock x:Name="TemperatureValue" Width="100" />
+            <TextBlock Text="K"/>
+        </StackPanel>
+        <StackPanel x:Name="EnthalpyOutput" Orientation="Horizontal" Margin="0,0,0,0">
+            <TextBlock Text="Enthalpy" Width="150" />
+            <TextBlock x:Name="EnthalpyValue" Width="100" />
+            <TextBlock Text="kJ/kg"/>
+        </StackPanel>
+        <StackPanel x:Name="RelativePressureOutput" Orientation="Horizontal" Margin="0,0,0,0">
+            <TextBlock Text="Relative Pressure" Width="150" />
+            <TextBlock x:Name="RelativePressureValue" Width="100" />
+        </StackPanel>
+        <StackPanel x:Name="InternalEnergyOutput" Orientation="Horizontal" Margin="0,0,0,0">
+            <TextBlock Text="Internal Energy" Width="150" />
+            <TextBlock x:Name="InternalEnergyValue" Width="100" />
+            <TextBlock Text="kJ/kg"/>
+        </StackPanel>
+        <StackPanel x:Name="RelativeVolumeOutput" Orientation="Horizontal" Margin="0,0,0,0">
+            <TextBlock Text="Relative Volume" Width="150" />
+            <TextBlock x:Name="RelativeVolumeValue" Width="100" />
+        </StackPanel>
+        <StackPanel x:Name="EntropyOutput" Orientation="Horizontal" Margin="0,0,0,0">
+            <TextBlock Text="Entropy" Width="150" />
+            <TextBlock x:Name="EntropyValue" Width="100" />
+            <TextBlock Text="kJ/kg K"/>
+        </StackPanel>
+    </StackPanel>
+
+</Page>

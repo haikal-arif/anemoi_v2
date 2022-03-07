@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///C:/Users/M HAIKAL A/Documents/Repos/anemoi_v2/INSTALL/anemoi_pkg.appinstaller"
+	Version="2.0.0.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="6bf7400f-098f-486e-b299-b5dc6fac7e52"
+		Version="2.0.0.0"
+		Publisher="CN=Contoso Software, O=Contoso Corporation, C=US"
+		Uri="file:///C:/Users/M HAIKAL A/Documents/Repos/anemoi_v2/INSTALL/anemoi_pkg_2.0.0.0_Test/anemoi_pkg_2.0.0.0_x64.msixbundle" />
+	<Dependencies>
+		<Package
+			Name="Microsoft.VCLibs.140.00.UWPDesktop"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///C:/Users/M HAIKAL A/Documents/Repos/anemoi_v2/INSTALL/anemoi_pkg_2.0.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx"
+			Version="14.0.30035.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file:///C:/Users/M HAIKAL A/Documents/Repos/anemoi_v2/INSTALL/anemoi_pkg_2.0.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
+			Version="14.0.30035.0" />
+	</Dependencies>
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>
